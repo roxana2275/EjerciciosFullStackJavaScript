@@ -92,4 +92,13 @@ strong{
     color:black;
 }
 
+@media screen and (max-width: 768px){
+    .formulario--input--padron {
+        width: 100%;
+        }
+        .formulario--imagen {
+            display: none;
+        }
+}
+
 
