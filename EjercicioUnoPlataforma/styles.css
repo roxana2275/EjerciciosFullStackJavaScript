@@ -1,3 +1,12 @@
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal
+}
+article p,article h3{
+    font-weight: 600 !important;
+    color: lightgray;
+}
 .logo{
     width: 50px;
     height: auto;
@@ -16,10 +25,13 @@
     background-color:lightseagreen;
     color:black;
     text-align: center;
+    
+    
+    
 }
 .titulo_rojo{
-    background-color:#a10505;
-    color:black;
+    background-color:#c92e08;
+    color:lightgray;
     text-align: center;
 }
 
@@ -29,76 +41,4 @@ strong{
 .card-title{
     color:#a10505;
 }
-
-.formulario {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background:#EAF2FD;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-.formulario--contenido {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-.formulario--enviar {
-    font-family: 'Raleway', sans-serif;
-    background: #2A7AE4;
-    justify-content: center;
-    align-items: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    margin: 32px 0px;
-    color: white;
-}
-
-.formulario--imagen {
-    width: 40%;
-}
-
-.formulario--informacion {
-    font-family: 'Raleway', sans-serif;
-    background: white;
-    font-size: 12px;
-    color:#A2A2A2;
-    margin-top: 20px;
-    padding: 5px;
-    border-radius: 3px;
-}
-
-.formulario--input--padron{
-    border: 0;
-    text-align: start;
-}
-
-.formulario--parrafo {
-    font-family: 'Raleway', sans-serif; 
-    font-size: 16px;
-    color:#464646;
-    padding: 5px;
-}
-
-.formulario--titulo{
-    font-family: 'Raleway', sans-serif;
-    font-size: 32px;
-    font-weight: 700;
-    padding-right: 2    0px;
-    color:black;
-}
-
-@media screen and (max-width: 768px){
-    .formulario--input--padron {
-        width: 100%;
-        }
-        .formulario--imagen {
-            display: none;
-        }
-}
-
 

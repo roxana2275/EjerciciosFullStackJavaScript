@@ -8,6 +8,9 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css" />
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <title>Cocina Juan</title>
 </head>
@@ -22,6 +25,7 @@
                     <li><a href="./index.html" class="nav-link px-2 text-white">Home</a></li>
                     <li><a href="./recetas.html" class="nav-link px-2 text-white">Recetas</a></li>
                     <li><a href="./contacto.html" class="nav-link px-2 text-white">Contacto</a></li>
+                    <li><a href="./sucursales.html" class="nav-link px-2 text-white">Sucursales</a></li>
                 </ul>
             </div>
         </div>
@@ -31,8 +35,7 @@
             Recetas
         </h2>
     <div class="album py-5">
-        <div class="container">
-
+        <div class="container ">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
                     <div class="card shadow-sm">
@@ -41,9 +44,11 @@
                             <p class="card-title fs-4">Vamos a hacer la leche asada casera más fácil y rica</p>
                             <p class="card-text">Mi receta de leche asada chilena, con un toque especial al incorporar 
                                 leche condensada, ofrece un postre cremoso y delicioso con tradición chilena.</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="card-footer d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                                    <a href="./infoRecetas.html#receta1">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" >Ver</button>
+                                    </a>
                                 </div>
                                 <small class="text-body-secondary">30 min</small>
                             </div>
@@ -56,11 +61,11 @@
                         <div class="card-body">
                             <p class="card-title fs-4">Qué es el charquicán, de dónde es y una receta en 4 pasos</p>
                             <p class="card-text">Un charquicán único, fusionando los ingredientes tradicionales del charquicán chileno, una experiencia culinaria auténtica.</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="card-footer d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-
-                                </div>
+                                    <a href="./infoRecetas.html#receta2">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" >Ver</button>
+                                    </a>                                </div>
                                 <small class="text-body-secondary">1 hora</small>
                             </div>
                         </div>
@@ -70,13 +75,13 @@
                     <div class="card shadow-sm">
                         <img src="./img/3.jpg"  alt="Foto de comida">
                         <div class="card-body">
-                            <p class="card-title fs-4">Receta en 4 pasos de gohan, el arroz japonés que tenés que intentar en casa</p>
+                            <p class="card-title fs-4">Receta en 4 pasos de gohan, el arroz japonés </p>
                             <p class="card-text">Logré un gohan delicioso, destacando el arroz japonés con la perfección del salmón, una combinación auténtica y sabrosa.</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="card-footer d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-
-                                </div>
+                                    <a href="./infoRecetas.html#receta3">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" >Ver</button>
+                                    </a>                                </div>
                                 <small class="text-body-secondary">40 min</small>
                             </div>
                         </div>
@@ -89,11 +94,11 @@
                         <div class="card-body">
                             <p class="card-title fs-4">Mote de queso: una sopa caribeña a la que hay que rendirle los honores</p>
                             <p class="card-text">Mote de queso costeño: deleita tu paladar con nuestra receta paso a paso. Descubre los secretos de este manjar tradicional y sorprende a todos.</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="card-footer d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-
-                                </div>
+                                    <a href="./infoRecetas.html#receta11">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" >Ver</button>
+                                    </a>                                </div>
                                 <small class="text-body-secondary">1.10 horas</small>
                             </div>
                         </div>
@@ -105,11 +110,11 @@
                         <div class="card-body">
                             <p class="card-title fs-4">La Chorrillana chilena es todo lo que está bien y te voy a contar porqué</p>
                             <p class="card-text">Exploro la riqueza de la chorrillana con mi receta única, fusionando papas, carne y huevos en un festín de sabores chilenos.</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="card-footer d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-
-                                </div>
+                                    <a href="./infoRecetas.html#receta5">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" >Ver</button>
+                                    </a>                                </div>
                                 <small class="text-body-secondary">50 min</small>
                             </div>
                         </div>
@@ -119,13 +124,13 @@
                     <div class="card shadow-sm">
                         <img src="./img/6.jpg"  alt="Foto de comida">
                         <div class="card-body">
-                            <p class="card-title fs-4">Cómo hacer el tomaticán chileno en 3 pasos y 1 tip para simplificar la receta</p>
+                            <p class="card-title fs-4">Cómo hacer el tomaticán chileno en 3 pasos</p>
                             <p class="card-text">Disfruta del Tomatican criollo con mi receta especial, fusionando ingredientes locales en un guiso tradicional chileno lleno de historia.</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="card-footer d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
+                                    <a href="./infoRecetas.html#receta6">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" >Ver</button>
+                                    </a>                                </div>
                                 <small class="text-body-secondary">1.3 hs</small>
                             </div>
                         </div>
@@ -138,11 +143,11 @@
                         <div class="card-body">
                             <p class="card-title fs-4">Los invito a hacer conmigo Carne Mongoliana, una receta única y distinta</p>
                             <p class="card-text">Mi versión de la carne mongoliana. Un placer irresistible con arroz que fusiona sabores y tradiciones para una experiencia culinaria única.</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="card-footer d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-
-                                </div>
+                                    <a href="./infoRecetas.html#receta7">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" >Ver</button>
+                                    </a>                                </div>
                                 <small class="text-body-secondary">1 hs</small>
                             </div>
                         </div>
@@ -154,11 +159,12 @@
                         <div class="card-body">
                             <p class="card-title fs-4">Para comer solo o en sándwich: el lomo saltado en 4 pasos es lo que estabas buscando</p>
                             <p class="card-text">Mi versión del lomo saltado: carne jugosa, vegetales frescos y un toque peruano en cada delicioso bocado.</p>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <br>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-
-                                </div>
+                                    <a href="./infoRecetas.html#receta8">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" >Ver</button>
+                                    </a>                                </div>
                                 <small class="text-body-secondary">50 min</small>
                             </div>
                         </div>
@@ -168,13 +174,13 @@
                     <div class="card shadow-sm">
                         <img src="./img/9.jpg" alt="Foto de comida">
                         <div class="card-body">
-                            <p class="card-title fs-4">La receta infalible de queque fácil que estabas buscando</p>
-                            <p class="card-text">Descubre la receta de queque fácil y esponjoso. Con ingredientes simples y pasos sencillos, un delicioso postre casero.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
-
-                                </div>
+                            <p class="card-title fs-4">Arroz con coco: una versión fácil de la receta típica del caribe colombiano </p>
+                            <p class="card-text">Disfruta del sabor caribeño con nuestra receta de Arroz con Coco colombiano. Un plato que eleva el arroz a nuevas alturas de delicia y tradición.</p>
+                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <a href="./infoRecetas.html#receta9">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" >Ver</button>
+                                    </a>                                </div>
                                 <small class="text-body-secondary">1.10 hs</small>
                             </div>
                         </div>
