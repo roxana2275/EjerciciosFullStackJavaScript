@@ -3,6 +3,13 @@
     font-weight: 300;
     font-style: normal
 }
+
+main{
+    background-image: url('./img/fondo.jpg'); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;   
+    background-size: cover;
+}
 article p,article h3{
     font-weight: 600 !important;
     color: lightgray;
@@ -15,7 +22,6 @@ article p,article h3{
 .imagen_juan{
     width: 300px;
     height: auto;
-    /*border-color: #98ff98;*/
 }
 .image-container {
     float: left; 
@@ -40,5 +46,16 @@ strong{
 }
 .card-title{
     color:#a10505;
+}
+
+footer {
+    min-height: 50px; /* Establece una altura mínima para el footer, ajusta este valor según sea necesario */
+}
+
+@media screen and (max-width: 280px){
+    .imagen_juan {
+        display: none;
+        width: 0%;
+    }
 }
 
