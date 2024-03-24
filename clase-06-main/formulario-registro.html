@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Formularios</title>
+</head>
+
+<body>
+    
+    <div class="contact--form">
+        <h2>Formulario de registro</h2>
+    <form action="show-data.html" target="_blank" class="contact--form--ingreso">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="firstname">Nombre: </label>
+            <input size="30" type="text" name="firstname" placeholder="Ingrese su nombre aqui...">
+            <label for="lastname">Apellido:</label>
+            <input size="30" type="text" name="lastname" placeholder="Ingrese su apellido aqui...">
+            <br><br>
+            <label for="street">Direccion:</label>
+            <input type="text" name="address" placeholder="Ingrese su dirección aqui...">
+            <label for="city">Ciudad: </label>
+            <input type="text" name="city" value="C.A.B.A.">
+            <br><br>
+            <label for="zipcode">Código Postal:</label>
+            <input type="text" name="zipcode" placeholder="Ingrese su codigo postal aqui...">
+            <label for="telefono">Telefono: </label>
+            <input type="tel" name="telefono" placeholder="Ingrese su telefono aqui ....">
+            <br><br>
+            <label for="BirthDate">Fecha Nac.(mm/dd/yyyy): </label>
+            <input type="date" name="birthdate">
+            <p>Género (Radio)
+                <input type="radio" name="gender" value="hombre" checked>Hombre
+                <input type="radio" name="gender" value="Mujer">Mujer
+                <input type="radio" name="gender" value="Otro"> Otro
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>        
+            <legend>Conocimientos previos:</legend>
+            <input type="checkbox" name="conocimientos" value="HTML"> HTML
+            <input type="checkbox" name="conocimientos" value="CSS"> CSS
+            <input type="checkbox" name="conocimientos" value="BOOTSTRAP"> Bootstrap
+            <input type="checkbox" name="conocimientos" value="Javascript"> Javascript
+            <input type="checkbox" name="conocimientos" value="BaseDeDatos"> Base de Datos
+            <input type="checkbox" name="conocimientos" value="Python"> Python
+            <input type="checkbox" name="conocimientos" value="Django"> Django
+            <label for="estudios">Estudios:</label>
+        <select id="estudios" name="estudios">
+            <option value="primaria">Primaria</option>
+            <option value="secundaria">Secundaria</option>
+            <option value="terciario">Terciario</option>
+            <option value="universitario">Universitario</option>
+        </select>
+    </fieldset>
+
+        <br>
+        <fieldset>
+            <legend>Comentarios:</legend>
+        <label for="comentarios"></label> <textarea name="comentarios" rows="5" cols="30"></textarea>
+        <input type="submit" value="Enviar">
+        <button type="reset" class="formulario--resgistro--reset">Reset</button>
+    </fieldset>
+    </form>
+    <p>Si usted hace click en el boton "Enviar", la informacion sera enviada a la pagina "show_data.html".</p>
+</div>
+</body>
+
+</html>
