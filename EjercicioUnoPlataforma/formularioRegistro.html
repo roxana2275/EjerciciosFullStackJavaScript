@@ -32,7 +32,7 @@
     </header>
     <main class="bg-dark text-white" >
         <h2 class="titulo_azul fs-1">
-            Contacto
+            Registrate
         </h2>
         <div class="container p-3">
         <form class="container bg-dark pb-3">
@@ -50,8 +50,13 @@
             </div>
             <div class="row g-2">
                 <div class="col-md">
-                    <label for="direccion" class="form-label mt-4">Dirección</label>
-                    <input type="text" class="form-control" id="direccion" aria-describedby="direccion"
+                    <label for="calle" class="form-label mt-4">Calle</label>
+                    <input type="text" class="form-control" id="calle" aria-describedby="calle"
+                        placeholder="Rivadavia 5000">
+                </div>
+                <div class="col-md">
+                    <label for="direccionNumero" class="form-label mt-4">Numero</label>
+                    <input type="number" class="form-control" id="direccionNumero" aria-describedby="numero"
                         placeholder="Rivadavia 5000">
                 </div>
                 <div class="col-md">
@@ -59,8 +64,7 @@
                     <input type="text" class="form-control" id="ciudad" aria-describedby="ciudad"
                         placeholder="C.A.B.A.">
                 </div>
-            </div>
-            <div class="row g-2">
+            
                 <div class="col-md">
                     <label for="pais" class="form-label mt-4">Pais</label>
                     <select class="form-select" aria-label="pais">
@@ -75,19 +79,26 @@
                     <input type="text" class="form-control" id="codigoPostal" aria-describedby="codigoPostal"
                         placeholder="1000">
                 </div>
-            </div>
             <div class="row g-2">
                 <div class="col-md">
+                    <label for="telefono" class="form-label mt-4">Teléfono</label>
+                    <input type number class="form-control" id="telefono" aria-describedby="telefono" required placeholder="54111512345679">
+                </div>
+                <div class="col-md">
                     <label for="fechaNacimiento" class="form-label mt-4">Fecha de Nacimiento</label>
-                    <input type="date" class="form-control" id="fechaNacimiento" aria-describedby="fechaNacimiento" required>
+                    <input type="number" class="form-control" id="fechaNacimiento" aria-describedby="fechaNacimiento" required placeholder="25/05/1810">
                 </div>
                 <div class="col-md">
                     <label for="email" class="form-label mt-4">Email</label>
                     <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
                 </div>
+                <div class="col-md">
+                    <label for="tp" class="form-label mt-4">Link TP 3:</label>
+                    <input type="text" class="form-control" id="tp" placeholder="www.github/juan/tp3" required>
+                </div>
             </div>
             <div class="row g-2 pt-2">
-
+                <h5>Genero</h5>
                 <div class="col-md">
                     <div class="form-check form-check-inline col-md ">
                         <input class="form-check-input" type="checkbox" id="Femenino" value="femenino">
@@ -102,6 +113,50 @@
                         <label class="form-check-label" for="otros">otros</label>
                     </div>
                 </div>
+            </div>
+            <div class="row g-2 pt-2">
+                <h5>Conocimientos previos</h5>
+                <div class="col-md d-flex flex-column">
+                    <div class="form-check form-switch form-check-inline">
+                        <input class="form-range" type="range" role="switch" id="HTML">
+                        <label class="form-label" for="HTML">HTML</label>
+                    </div>
+                    <div class="form-check form-switch form-check-inline">
+                        <input class="form-range" type="range" role="switch" id="CSS">
+                        <label class="form-label" for="CSS">CSS</label>
+                    </div>
+                    <div class="form-check form-switch form-check-inline">
+                        <input class="form-range" type="range" role="switch" id="Bootstrap">
+                        <label class="form-label" for="Bootstrap">Bootstrap</label>
+                    </div>
+                    <div class="form-check form-switch form-check-inline">
+                        <input class="form-range" type="range" role="switch" id="javaScript">
+                        <label class="form-label" for="javaScript">JavaScript</label>
+                    </div>
+                    <div class="form-check form-switch form-check-inline">
+                        <input class="form-range" type="range" role="switch" id="typescript">
+                        <label class="formlabel" for="typescript">Typescript</label>
+                    </div>
+                    <div class="form-check form-switch form-check-inline">
+                        <input class="form-range" type="range" role="switch" id="angular">
+                        <label class="form-label" for="angular">Angular</label>
+                    </div>
+                    <div class="form-check form-switch form-check-inline">
+                        <input class="form-range" type="range" role="switch" id="baseDeDatos">
+                        <label class="form-label" for="baseDeDatos">Base de Datos</label>
+                    </div>
+                    <div class="form-check form-switch form-check-inline">
+                        <input class="form-range" type="range" role="switch" id="python">
+                        <label class="form-label" for="python">Python</label>
+                    </div>
+                    <div class="form-check form-switch form-check-inline">
+                        <input class="form-range" type="range" role="switch" id="django">
+                        <label class="form-label" for="django">Django</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-2 pt-2">
+                <h5>Educación</h5>
                 <div class="col-md">
                     <div class="form-check form-switch form-check-inline">
                         <input class="form-check-input" type="checkbox" role="switch" id="primario">
@@ -119,6 +174,11 @@
                         <input class="form-check-input" type="checkbox" role="switch" id="universitario">
                         <label class="form-check-label" for="universitario">Universitario</label>
                     </div>
+                </div>
+                <div>
+                    <label for="comentario" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="comentario" rows="3"></textarea>
+                </div>
                 </div>
             </div>
 
