@@ -263,7 +263,7 @@ function funcionEjercicio18(){
 }
 
 function funcionEjercicio19(){
-  let numero1 = parseInt(document.getElementById("letiableUnoEjercicioDiecinueve").value);
+  let numero1 = parseInt(document.getElementById("variableUnoEjercicioDiecinueve").value);
   switch(numero1){
     case 0:
       resultadoEjercicio19.textContent = "Muy deficiente";
