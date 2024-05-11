@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Montserrat:wght@300&family=Quicksand:wght@300;500;600;700&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <title>JS</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Actividad Práctica JavaScript Unidad 2</h1>
+        <h2>Funciones</h2>
+
+        <div class="containerEjercicio">
+            <h3>Ejercicio 1</h3>
+            <p>Realizar una función, a la que se le pase como parámetro un número N,
+                y muestre por consola N veces, el siguiente mensaje: “Bienvenidos al
+                curso Full Stack”</p>
+            <div class="col-md-4">
+                <label for="variableUnoEjercicio1" class="form-label">Dato</label><br>
+                <input type="number" class="form-control" id="variableUnoEjercicio1" required>
+            </div>
+
+            <button type="button" class="button" onclick="funcionEjercicio1()">Resultado</button>
+        </div>
+
+        <div class="containerEjercicio">
+            <h3>Ejercicio 2</h3>
+            <p>Diseñar una función que tenga como parámetros dos números, y que
+                calcule el máximo.</p>
+            <div class="col-md-4">
+                <label for="variableUnoEjercicio2" class="form-label">Dato</label><br>
+                <input type="number" class="form-control" id="variableUnoEjercicio2" required>
+            </div>
+            <div class="col-md-4">
+                <label for="variableDosEjercicio2" class="form-label">Dato</label><br>
+                <input type="number" class="form-control" id="variableDosEjercicio2" required>
+            </div>
+            <div class="form-control" id="resultadoEjercicio2">Resultado</div>
+            <button type="button" class="button"
+                onclick="funcionEjercicio2('variableUnoEjercicio2','variableDosEjercicio2')">Resultado</button>
+        </div>
+
+        <div class="containerEjercicio">
+            <h3>Ejercicio 3</h3>
+            <p> Crear una función que se llame promedio3, que reciba como
+                parámetro tres valores y devuelva el promedio de los mismos.</p>
+            <div class="col-md-4">
+                <label for="variableUnoEjercicio3" class="form-label">Dato</label><br>
+                <input type="number" class="form-control" id="variableUnoEjercicio3" required>
+            </div>
+            <div class="col-md-4">
+                <label for="variableDosEjercicio3" class="form-label">Dato</label><br>
+                <input type="number" class="form-control" id="variableDosEjercicio3" required>
+            </div>
+            <div class="col-md-4">
+                <label for="variableTresEjercicio3" class="form-label">Dato</label><br>
+                <input type="number" class="form-control" id="variableTresEjercicio3" required>
+            </div>
+            <div class="form-control" id="resultadoEjercicio3">Resultado</div>
+            <button type="button" class="button" onclick="funcionEjercicio3()">Resultado</button>
+        </div>
+
+        <div class="containerEjercicio">
+            <h3>Ejercicio 4</h3>
+            <p>Crear una función que lea notas hasta que ingrese -1 y devuelve el
+                promedio de las notas leídas. ( aunque no se suele leer valores en una
+                función)Una función que se llame siguiente, que reciba como
+                parámetro un valor entero, y devuelva el siguiente del número
+                ingresado como parámetro</p>
+            <button type="button" class="button" onclick="funcionEjercicio4()">Resultado</button>
+        </div>
+
+        <div class="containerEjercicio">
+            <h3>Ejercicio 5</h3>
+            <p>Una función que se llame doble, que reciba como parámetro un valor, y
+                devuelva el doble del número ingresado como parámetro.</p>
+            <form class="row g-3 m-3">
+                <div class="col-md-4">
+                    <label for="variableUnoEjercicio5" class="form-label">Dato</label><br>
+                    <input type="number" class="form-control" id="variableUnoEjercicio5" required>
+                </div>
+                <div class="form-control" id="resultadoEjercicio5">Resultado</div>
+                <div class="col-12">
+                    <button class="button" type="button" onclick="funcionEjercicio5()">Resultado</button>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="containerEjercicio">
+            <h3>Ejercicio 6</h3>
+            <p>Una función que se llame cuadrado, que reciba como parámetro un
+                valor, y devuelva el valor del numero ingresado como parámetro
+                elevado al cuadrado.
+            </p>
+            <form class="row g-3 m-3">
+                <div class="col-md-4">
+                    <label for="variableUnoEjercicio6" class="form-label">Dato</label><br>
+                    <input type="number" class="form-control" id="variableUnoEjercicio6" required>
+                </div>
+                <div class="form-control" id="resultadoEjercicio6">Resultado</div>
+                <div class="col-12">
+                    <button class="button" type="button" onclick="funcionEjercicio6()">Resultado</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="containerEjercicio">
+            <h3>Ejercicio 7</h3>
+            <p>Una función que se denomine imprimirValores que dado un número
+                por parámetro, imprima cual es el valor siguiente, el doble y el
+                cuadrado. Usando las funciones definidas en los puntos 5) , 6) y 7) :
+                siguiente, el doble y el cuadrado.
+            </p>
+            <div class="fs-6 m-3">
+                <label for="variableUnoEjercicioSiete" class="form-label">Dato</label><br>
+                <input type="number" class="form-control" id="variableUnoEjercicioSiete" min="1" required>
+                <br>
+                <div class="form-control" id="resultadoEjercicio7">Resultado</div>
+                <button class="button" onclick="funcionEjercicio7()">Resultado</button>
+            </div>
+        </div>
+
+        <div class="containerEjercicio">
+            <h3>Ejercicio 8</h3>
+            <p>Una función que se denomine imprimirElDobleDelSiguiente que dado
+                un número por parámetro, imprima cual es el valor siguiente al el doble.
+                Usando las funciones definidas en los puntos 5) , 6) : siguiente, el
+                doble .</p>
+            <div class="fs-6 m-3">
+                <label for="variableUnoEjercicioOcho" class="form-label">Dato</label><br>
+                <input type="number" class="form-control" id="variableUnoEjercicioOcho" min="1" required>
+                <br>
+                <div class="form-control" id="resultadoEjercicio8">Resultado</div>
+                <button class="button" type="button" onclick="funcionEjercicio8()">Resultado</button>
+            </div>
+        </div>
+
+        <div class="containerEjercicio">
+            <h3>Ejercicio 9</h3>
+            <p>Una función que se denomine
+                imprimirElDobleDelSiguienteAlCuadrado que dado un número por
+                parámetro, imprima cual es el valor siguiente al el doble. Usando las
+                funciones definidas en los puntos 5) , 6) y 7) : siguiente, el doble y el
+                cuadrado
+            </p>
+            <form class="m-3">
+                <label for="variableUnoEjercicioNueve" class="form-label">Dato</label><br>
+                <input type="number" class="form-control" id="variableUnoEjercicioNueve" required>
+                <br>
+                <div class="form-control" id="resultadoEjercicio9">Resultado</div>
+                <button class="button" type="button" onclick="funcionEjercicio9()">Resultado</button>
+            </form>
+        </div>
+
+        <div class="containerEjercicio">
+            <h3>Ejercicio 10</h3>
+            <p>Una función que dado la longitud de un lado de un cuadrado devuelva
+                el perímetro
+            </p>
+            <form class="m-3">
+                <label for="variableUnoEjercicioDiez" class="form-label">Dato</label><br>
+                <input type="number" class="form-control" id="variableUnoEjercicioDiez" required>
+                <br>
+                <div class="form-control" id="resultadoEjercicio10">Resultado</div>
+                <button class="button" type="button" onclick="funcionEjercicio10()">Resultado</button>
+            </form>
+        </div>
+        <div class="containerEjercicio">
+            <h3>Ejercicio 11</h3>
+            <p>Una función que dado la longitud de un lado de un cuadrado devuelva
+                la superficie.
+            </p>
+            <form class="m-3">
+                <label for="variableUnoEjercicioOnce" class="form-label">lDato</label><br>
+                <input type="number" class="form-control" id="variableUnoEjercicioOnce" required>
+                <br>
+                <div class="form-control" id="resultadoEjercicio11">Resultado</div>
+                <button class="button" type="button" onclick="funcionEjercicio11()">Modificar</button>
+            </form>
+        </div>
+
+        <div class="containerEjercicio">
+            <h3>Ejercicio 12</h3>
+            <p>Una función que dado el radio de un círculo devuelva la circunferencia
+                (perímetro del círculo).
+            </p>
+            <form class="m-3">
+                <label for="variableUnoEjercicioDoce" class="form-label">Dato</label><br>
+                <input type="number" class="form-control" id="variableUnoEjercicioDoce" required>
+                <br>
+                <div class="form-control" id="resultadoEjercicio12">Resultado</div>
+                <button class="button" type="button" onclick="funcionEjercicio12()">Resultado</button>
+            </form>
+        </div>
+        <div class="containerEjercicio">
+
+            <h3>Ejercicio 13</h3>
+            <p>Una función que dado el radio de un círculo devuelva el área del
+                círculo.
+            </p>
+            <form class="row g-3 m-3">
+                <div class="col-md-4">
+                    <label for="variableUnoEjercicioTrece" class="form-label">Dato</label><br>
+                    <input type="number" class="form-control" id="variableUnoEjercicioTrece" required>
+                </div>
+                <div class="form-control" id="resultadoEjercicio13">Resultado</div>
+                <div class="col-12">
+                    <button class="button" type="button" onclick="funcionEjercicio13()">Resultado</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="containerEjercicio">
+            <h3>Ejercicio 14</h3>
+            <p>Una función que dado un número de mes y me devuelva la cantidad de
+                días de ese mes (suponiendo que no es un año bisiesto).
+            </p>
+            <form class="row g-3 m-3">
+                <div class="col-md-4">
+                    <label for="variableUnoEjercicioCatorce" class="form-label">Dato</label><br>
+                    <input type="number" class="form-control" id="variableUnoEjercicioCatorce" required>
+                </div>
+                <div class="form-control" id="resultadoEjercicio14">Resultado</div>
+                <div class="col-12">
+                    <button class="button" type="button" onclick="funcionEjercicio14()">Resultado</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="containerEjercicio">
+            <h3>Ejercicio 15</h3>
+            <p>Una función que reciba como parámetro un año y diga si ese año es
+                bisiesto.
+            </p>
+            <div class="m-3">
+                <label for="variableUnoEjercicioQuince" class="form-label">Dato</label><br>
+                <input type="number" id="variableUnoEjercicioQuince" class="form-control" required>
+                <br>
+                <div class="form-control" id="resultadoEjercicio15">Resultado</div>
+                <button type="button" class="button" onclick="funcionEjercicio15()">Resultado</button>
+            </div>
+
+        </div>
+
+
+        <div class="containerEjercicio">
+
+            <h3>Ejercicio 16</h3>
+            <p>Una función que reciba el día, mes y año y me devuelva la cantidad de
+                días de ese mes.
+            </p>
+            <div class="m-3">
+                <label for="variableUnoEjercicioDieciseis" class="form-label">Dato</label><br>
+                <input type="date" id="variableUnoEjercicioDieciseis" class="form-control" required>
+                <br>
+                <div id="resultadoEjercicio16" class="form-control">Resultado</div>
+                <button type="button" class="button" onclick="funcionEjercicio16()">Resultado</button>
+            </div>
+        </div>
+
+        <div class="containerEjercicio">
+
+            <h3>Ejercicio 17</h3>
+            <p>Una función que reciba día, mes y año y devuelva el día anterior
+            </p>
+            <div class="m-3">
+                <label for="variableUnoEjercicioDiecisite" class="form-label">Dato</label><br>
+                <input type="date" id="variableUnoEjercicioDiecisite" class="form-control" required>
+                <br>
+
+                <div id="resultadoEjercicio17" class="form-control">Resultado</div>
+                <button type="button" class="button" onclick="funcionEjercicio17()">Resultado</button>
+            </div>
+        </div>
+        <div class="containerEjercicio">
+
+            <h3>Ejercicio 18</h3>
+            <p>Una función que se llame ultimoDiaDelMes que reciba día, mes y año y
+                devuelva el último día del mes.</p>
+            <div class="m-3">
+                <label for="variableUnoEjercicioDieciocho" class="form-label">Dato</label><br>
+                <input type="date" id="variableUnoEjercicioDieciocho" class="form-control" required>
+                <br>
+
+                <div id="resultadoEjercicio18" class="form-control">Resultado</div>
+                <button type="button" class="button" onclick="funcionEjercicio18()">Resultado</button>
+            </div>
+        </div>
+        <h2>String y Array</h2>
+        <div class="containerEjercicio">
+            <h3>Ejercicio 19</h3>
+            <p>cree un array con todas las edades de los estudiantes de su
+                clase. Itere el array utilizando un bucle while y luego imprima todas las
+                edades en la consola.</p>
+
+            <button type="button" class="button" onclick="funcionEjercicio19()">Resultado</button>
+        </div>
+
+        <div class="containerEjercicio">
+            <!--FALTA DESDE ACA-->
+            <h3>Ejercicio 20</h3>
+            <p>Al ejercicio 1 agregue un condicional dentro del ciclo while
+                para imprimir solo números pares. Cambie el ciclo para usar un ciclo
+                "for" en lugar de un ciclo "while".
+            </p>
+            <label for="variableUnoEjercicioVeinte" class="form-label">Dato</label><br>
+            <input type="number" id="variableUnoEjercicioVeinte" class="form-control" required>
+            <br>
+
+            <div class="m-3">
+                <button type="button" class="button" onclick="funcionEjercicio20()">Resultado</button>
+            </div>
+        </div>
+        <div class="containerEjercicio">
+
+            <h3>Ejercicio 21</h3>
+            <p>Para los siguientes ejercicios, no puede ordenar su array. ¡Asegúrese
+                de que su solución funcione para cualquier array que se pase!</p>
+            <p>escriba una función que reciba un array como parámetro e
+                imprima el número más bajo de la array en la consola.
+            </p>
+            <label for="variableUnoEjercicioVeintiuno" class="form-label">Dato</label><br>
+            <input type="number" id="variableUnoEjercicioVeintiuno" class="form-control" required>
+            <br>
+            <div class="m-3">
+                <button type="button" class="button" onclick="funcionEjercicio21()">Resultado</button>
+            </div>
+        </div>
+        </div>
+        <div class="containerEjercicio">
+
+            <h3>Ejercicio 22</h3>
+            <p>escriba una función que reciba un array como parámetro e
+                imprima el número más grande de la array en la consola.
+            </p>
+            <label for="variableUnoEjercicioVeintidos" class="form-label">Dato</label><br>
+            <input type="number" id="variableUnoEjercicioVeintidos" class="form-control" required>
+            <br>
+            <div class="m-3">
+                <button type="button" class="button" onclick="funcionEjercicio22()">Resultado</button>
+            </div>
+        </div>
+
+        <div class="containerEjercicio">
+            <h3>Ejercicio 23</h3>
+            <p>Escriba una función que reciba dos parámetros, una array y
+                un índice. La función imprimirá el valor del elemento en la posición
+                dada (basado en uno) en la consola. Por ejemplo, dada la siguiente array e índice, la función imprimirá
+                '6'.</p>
+            <p>var array =[3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];</p>
+            <p>var index = 1;</p>
+            <label for="variableUnoEjercicioVeintitres" class="form-label">Dato</label><br>
+            <input type="number" id="variableUnoEjercicioVeintitres" class="form-control" required>
+            <br>
+            <label for="variableDosEjercicioVeintitres" class="form-label">Dato</label><br>
+            <input type="number" id="variableDosEjercicioVeintitres" class="form-control" required>
+            <br>
+            <div class="m-3">
+                <button type="button" class="button" onclick="funcionEjercicio23()">Resultado</button>
+            </div>
+        </div>
+
+        <div class="containerEjercicio">
+            <h3>Ejercicio 24</h3>
+            <p>Escriba una función que reciba una array y solo imprima los
+                valores que se repiten. Por ejemplo, dada la siguiente array e índice, la
+                función imprimirá '6,23,33,100'.</p>
+            <p>var array =
+                [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];</p>
+                <label for="variableUnoEjercicioVeinticuatro" class="form-label">Dato</label><br>
+                <input type="number" id="variableUnoEjercicioVeinticuatro" class="form-control" required>
+                <br>
+            <div class="m-3">
+                <button type="button" class="button" onclick="funcionEjercicio24()">Resultado</button>
+            </div>
+        </div>
+
+        <div class="containerEjercicio">
+
+            <h3>Ejercicio 25</h3>
+            <p>Ejercicio 7: escriba una función de JavaScript simple para unir todos los
+                elementos de la siguiente array en una cadena.</p>
+            <p>myColor = ["Red", "Green", "White", "Black"];</p>
+            <p>Debería ver lo siguiente en su consola: "Rojo", "Verde", "Blanco",
+                "Negro"</p>
+            <div class="m-3">
+                <button type="button" class="button" onclick="funcionEjercicio25()">Resultado</button>
+            </div>
+        </div>
+        <div class="containerEjercicio">
+            <h3>Ejercicio 26</h3>
+            <p>Escriba una función de JavaScript que invierta un número.
+                Por ejemplo, si x = 32443, la salida debería ser 34423.</p>
+                <label for="variableUnoEjercicioVeintiseis" class="form-label">Dato</label><br>
+                <input type="number" id="variableUnoEjercicioVeintiseis" class="form-control" required>
+                <br>
+            <div class="m-3">
+                <button type="button" class="button" onclick="funcionEjercicio26()">Resultado</button>
+            </div>
+        </div>
+        <div class="containerEjercicio">
+            <h3>Ejercicio 27</h3>
+            <p> escriba una función de JavaScript que devuelva una cadena
+                en orden alfabético. Por ejemplo, si x = 'webmaster', la salida debería
+                ser 'abeemrstw'. La puntuación y los números no se pasan en la
+                cadena.</p>
+                <label for="variableUnoEjercicioVeintisiete" class="form-label">Dato</label><br>
+                <input type="text" id="variableUnoEjercicioVeintisiete" class="form-control" required>
+                <br>
+            <div class="m-3">
+                <button type="button" class="button" onclick="funcionEjercicio27()">Resultado</button>
+            </div>
+        </div>
+        <div class="containerEjercicio">
+            <h3>Ejercicio 28</h3>
+            <p>>escriba una función de JavaScript que convierta la primera
+                letra de cada palabra a mayúsculas. Por ejemplo, si x = "prince of
+                persia", la salida debería ser "Prince Of Persia".</p>
+                <label for="variableUnoEjercicioVeintiocho" class="form-label">Dato</label><br>
+                <input type="text" id="variableUnoEjercicioVeintiocho" class="form-control" required>
+                <br>
+            <div class="m-3">
+                <button type="button" class="button" onclick="funcionEjercicio28()">Resultado</button>
+            </div>
+        </div>
+        <div class="containerEjercicio">
+            <h3>Ejercicio 29</h3>
+            <p>>escriba una función de JavaScript que busque la palabra
+                más larga de una frase. Por ejemplo, si x = "Tutorial de desarrollo web",
+                el resultado debería ser "Desarrollo".</p>
+                <label for="variableUnoEjercicioVeintinueve" class="form-label">Dato</label><br>
+                <input type="text" id="variableUnoEjercicioVeintinueve" class="form-control" required>
+                <br>
+            <div class="m-3">
+                <button type="button" class="button" onclick="funcionEjercicio29()">Resultado</button>
+            </div>
+        </div>
+        <!--FOOTER-->
+        <footer class="container m-3">
+
+        </footer>
+    </main>
+
+    <!--JAVASCRIPT-->
+    <script src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

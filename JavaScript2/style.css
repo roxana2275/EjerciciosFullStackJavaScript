@@ -1,0 +1,51 @@
+main{
+    margin: 5px;
+}
+h3 {
+font-family: 'Montserrat', sans-serif !important;
+color:rgb(71, 71, 255) !important;
+font-size: 30px;
+}
+p,.form-label, option,.form-select, li{
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 500!important;
+    font-size: 20px;
+
+}
+main{
+    margin-top: 3px !important;
+}
+.containerEjercicio {
+    padding: 10px;
+    margin: 5px;
+    border-style: solid;
+    border-color: rgb(184, 184, 247);
+}
+.button{
+    background-color: rgb(68, 68, 248);
+    color:white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 5px;
+}
+.form-control, .form-select{
+    margin: 3px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: ghostwhite;
+    font-family: 'Montserrat', sans-serif;
+    width: 500px;
+}
+.resultadoEjercicios{
+    background-color: ghostwhite;
+    padding: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 500px;
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(71, 71, 255);
+    font-weight: bold;
+}
